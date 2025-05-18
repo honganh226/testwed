@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #111;
+            color: white;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #111;
+        }
+        
+        .portfolio-title {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .creative {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 5rem;
+            color: white;
+            line-height: 0.9;
+            text-transform: uppercase;
+        }
+        
+        .portfolio {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 10rem;
+            color: #e74c3c;
+            line-height: 0.9;
+            text-transform: uppercase;
+            margin-top: -20px;
+        }
+        
+        .x-marks {
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            display: flex;
+            gap: 1rem;
+            z-index: 1;
+        }
+        
+        .x-mark {
+            font-size: 5rem;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .model-image {
+            position: absolute;
+            right: 20%;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 80%;
+            z-index: 1;
+            filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+        }
+        
+        .info-section {
+            position: absolute;
+            bottom: 10%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10%;
+            z-index: 2;
+        }
+        
+        .info-left, .info-right {
+            max-width: 300px;
+        }
+        
+        .name {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .date {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: right;
+        }
+        
+        .description {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 1200px) {
+            .portfolio {
+                font-size: 8rem;
+            }
+            
+            .model-image {
+                right: 10%;
+                height: 70%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .creative {
+                font-size: 3rem;
+            }
+            
+            .portfolio {
+                font-size: 5rem;
+            }
+            
+            .model-image {
+                opacity: 0.5;
+                right: 0;
+                height: 60%;
+            }
+            
+            .info-section {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .info-right {
+                text-align: left;
+            }
+            
+            .date {
+                text-align: left;
+            }
+            
+            .x-marks {
+                top: 5%;
+                right: 5%;
+            }
+            
+            .x-mark {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="portfolio-title">
+            <div class="creative">Creative</div>
+            <div class="portfolio">Portfolio</div>
+        </div>
+        
+        <div class="x-marks">
+            <div class="x-mark">✕</div>
+            <div class="x-mark">✕</div>
+            <div class="x-mark">✕</div>
+        </div>
+        
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gID0jwcsfT7N7hitwKm3Jjur2IphVH.png" alt="Model" class="model-image">
+        
+        <div class="info-section">
+            <div class="info-left">
+                <div class="name">Donna Stroupe</div>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            
+            <div class="info-right">
+                <div class="date">OCTOBER 10, 2025</div>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
